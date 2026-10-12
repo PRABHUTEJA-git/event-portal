@@ -1,0 +1,126 @@
+
+.ei-layout {
+  min-height: 100vh;
+  display: flex;
+  background: #f6f7fb;
+  color: #20243a;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+.ei-sidebar {
+  width: 245px;
+  flex-shrink: 0;
+  background: #fff;
+  border-right: 1px solid #e9eaf1;
+  padding: 25px 16px 18px;
+  display: flex;
+  flex-direction: column;
+}
+.ei-brand { display: flex; align-items: center; gap: 11px; padding: 0 8px 35px; }
+.ei-brand-icon { display: grid; place-items: center; width: 39px; height: 39px; border-radius: 12px; background: #6557e8; color: white; font-size: 23px; font-weight: 800; }
+.ei-brand strong, .ei-brand small, .ei-user-info strong, .ei-user-info small { display: block; }
+.ei-brand strong { font-size: 14px; }
+.ei-brand small, .ei-user-info small { color: #9296a8; font-size: 11px; margin-top: 4px; }
+.ei-menu-label, .ei-eyebrow { color: #999caf; font-size: 10px; font-weight: 800; letter-spacing: 1.2px; }
+.ei-menu-label { padding-left: 10px; margin-bottom: 12px; }
+.ei-nav { display: grid; gap: 7px; }
+.ei-nav-item { display: flex; align-items: center; gap: 12px; border: 0; background: transparent; color: #777c90; text-align: left; padding: 13px 12px; border-radius: 10px; cursor: pointer; font-size: 13px; }
+.ei-nav-item > span { width: 20px; font-size: 17px; text-align: center; }
+.ei-nav-item.active { background: #efedff; color: #6254df; font-weight: 700; }
+.ei-count { margin-left: auto; background: #6557e8; color: white; border-radius: 20px; padding: 2px 7px; font-size: 10px; }
+.ei-sidebar-bottom { display: flex; align-items: center; gap: 10px; margin-top: auto; padding: 20px 4px 0; border-top: 1px solid #eeeef4; }
+.ei-user-avatar, .ei-profile-avatar { display: grid; place-items: center; border-radius: 50%; background: #e9e6ff; color: #6557e8; font-weight: 800; }
+.ei-user-avatar { width: 36px; height: 36px; }
+.ei-user-info { min-width: 0; flex: 1; }
+.ei-user-info strong { font-size: 12px; overflow-wrap: anywhere; }
+.ei-logout { border: 0; background: transparent; cursor: pointer; color: #777c90; font-size: 21px; }
+.ei-main { flex: 1; min-width: 0; padding: 28px 32px; }
+.ei-topbar { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 27px; }
+.ei-eyebrow { margin: 0 0 8px; }
+.ei-topbar h1 { margin: 0; font-size: 25px; letter-spacing: -.7px; }
+.ei-top-user { display: flex; align-items: center; gap: 9px; font-size: 12px; color: #686d80; }
+.ei-status-dot { width: 8px; height: 8px; background: #24b47e; border-radius: 50%; }
+.ei-welcome { display: flex; justify-content: space-between; align-items: center; background: linear-gradient(110deg, #6557e8, #8977f0); color: white; border-radius: 17px; padding: 26px 30px; margin-bottom: 22px; }
+.ei-welcome p { font-size: 10px; letter-spacing: 1.4px; font-weight: 800; opacity: .8; }
+.ei-welcome h2 { font-size: 24px; margin: 10px 0 7px; }
+.ei-welcome span { font-size: 13px; opacity: .9; }
+.ei-welcome-symbol { font-size: 54px; opacity: .8; padding: 0 12px; }
+.ei-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 15px; margin-bottom: 22px; }
+.ei-stat-card, .ei-panel, .ei-detail-card { background: white; border: 1px solid #ececf3; border-radius: 15px; }
+.ei-stat-card { padding: 19px; }
+.ei-stat-card p { color: #7e8294; font-size: 12px; margin: 0 0 13px; }
+.ei-stat-card > strong { display: block; font-size: 27px; }
+.ei-stat-card > small { display: block; color: #a0a3b1; font-size: 10px; margin-top: 5px; }
+.ei-panel { padding: 23px; margin-bottom: 20px; }
+.ei-panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+.ei-panel-heading h2 { margin: 0; font-size: 16px; }
+.ei-panel-heading p { color: #9296a8; font-size: 12px; margin: 7px 0 0; }
+.ei-text-button, .ei-review-button, .ei-back { border: 0; background: transparent; color: #6557e8; cursor: pointer; font-size: 12px; font-weight: 700; }
+.ei-table-wrap { width: 100%; overflow-x: auto; }
+.ei-table { width: 100%; border-collapse: collapse; text-align: left; white-space: nowrap; }
+.ei-table th { color: #9a9daf; font-size: 10px; font-weight: 700; padding: 12px 10px; background: #fafaff; }
+.ei-table td { border-bottom: 1px solid #f0f0f5; padding: 15px 10px; font-size: 12px; color: #62677b; }
+.ei-table tr:last-child td { border-bottom: 0; }
+.ei-table td strong, .ei-table td small { display: block; }
+.ei-table td strong { color: #303449; font-size: 12px; }
+.ei-table td small { color: #a0a3b1; font-size: 10px; margin-top: 5px; }
+.ei-badge { display: inline-block; padding: 6px 9px; border-radius: 20px; font-size: 10px; font-weight: 700; }
+.ei-badge.pending { color: #bd791c; background: #fff2df; }
+.ei-badge.approved { color: #16845b; background: #e1f7ec; }
+.ei-badge.rejected { color: #c23e50; background: #ffeaed; }
+.ei-filters { display: flex; gap: 12px; margin-bottom: 20px; }
+.ei-filters input, .ei-filters select { min-width: 0; border: 1px solid #e7e7ef; border-radius: 9px; padding: 11px 12px; background: #fff; color: #45495c; font: inherit; font-size: 12px; }
+.ei-filters input { flex: 1; }
+.ei-detail-card { padding: 26px; }
+.ei-back { margin-bottom: 25px; }
+.ei-detail-heading { display: flex; justify-content: space-between; gap: 15px; align-items: flex-start; padding-bottom: 23px; border-bottom: 1px solid #eeeef4; }
+.ei-request-id { color: #6557e8; font-size: 11px; font-weight: 800; }
+.ei-detail-heading h2 { margin: 8px 0; font-size: 24px; }
+.ei-detail-heading p { color: #9296a8; font-size: 12px; }
+.ei-detail-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; padding: 25px 0; }
+.ei-detail-grid small, .ei-detail-grid strong { display: block; }
+.ei-detail-grid small { color: #9296a8; font-size: 11px; margin-bottom: 8px; }
+.ei-detail-grid strong { font-size: 13px; }
+.ei-description { background: #f8f8fc; border-radius: 11px; padding: 17px; }
+.ei-description h3 { font-size: 13px; margin: 0 0 8px; }
+.ei-description p, .ei-notice { color: #777c90; font-size: 12px; line-height: 1.7; }
+.ei-actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 23px; }
+.ei-actions button { padding: 11px 17px; border-radius: 9px; cursor: pointer; font-weight: 700; font-size: 12px; }
+.ei-reject { color: #c23e50; background: white; border: 1px solid #f0cbd0; }
+.ei-approve { color: white; background: #6557e8; border: 1px solid #6557e8; }
+.ei-empty { text-align: center; color: #9296a8; padding: 25px; font-size: 13px; }
+.ei-profile { max-width: 520px; text-align: center; margin: 30px auto; }
+.ei-profile-avatar { width: 65px; height: 65px; margin: 0 auto 12px; font-size: 25px; }
+.ei-profile h2 { margin-bottom: 6px; }
+.ei-profile > p { color: #9296a8; font-size: 12px; }
+.ei-profile-row { display: flex; justify-content: space-between; gap: 12px; padding: 16px 0; border-bottom: 1px solid #eeeef4; text-align: left; font-size: 12px; }
+.ei-profile-row span { color: #9296a8; }
+.ei-profile .ei-notice { text-align: left; margin-top: 18px; }
+.ei-footer { text-align: center; color: #a0a3b1; font-size: 10px; padding: 15px; }
+
+@media (max-width: 1050px) {
+  .ei-sidebar { width: 210px; }
+  .ei-main { padding: 24px 20px; }
+  .ei-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 680px) {
+  .ei-layout { display: block; }
+  .ei-sidebar { width: auto; padding: 15px; border-right: 0; border-bottom: 1px solid #e9eaf1; }
+  .ei-brand { padding: 0 4px 15px; }
+  .ei-menu-label, .ei-sidebar-bottom { display: none; }
+  .ei-nav { display: flex; overflow-x: auto; }
+  .ei-nav-item { flex-shrink: 0; padding: 10px; }
+  .ei-main { padding: 20px 13px; }
+  .ei-topbar h1 { font-size: 21px; }
+  .ei-top-user { display: none; }
+  .ei-welcome { padding: 22px 18px; }
+  .ei-welcome h2 { font-size: 20px; }
+  .ei-welcome-symbol { font-size: 35px; padding: 0; }
+  .ei-stats { gap: 10px; }
+  .ei-stat-card { padding: 14px; }
+  .ei-panel, .ei-detail-card { padding: 15px; }
+  .ei-panel-heading { align-items: flex-start; }
+  .ei-filters { flex-direction: column; }
+  .ei-detail-grid { gap: 18px 10px; }
+  .ei-actions { flex-direction: column-reverse; }
+  .ei-actions button { width: 100%; }
+}
